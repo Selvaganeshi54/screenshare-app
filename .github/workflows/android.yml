@@ -29,5 +29,6 @@ jobs:
       - name: Run Gradle assemble
         uses: gradle/gradle-build-action@v2
         with:
-          gradle-version: '8.4'
+          # Use Gradle 7.5.1 to match Android Gradle Plugin 7.4.2
+          gradle-version: '7.5.1'
           arguments: assembleDebug --no-daemon

@@ -33,6 +33,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
 
-    // WebRTC - prebuilt maven artifact
-    implementation 'org.webrtc:google-webrtc:1.0.32006'
+    // Modern WebRTC library hosted on Maven/JitPack (replace deprecated artifact)
+    implementation 'io.getstream:stream-webrtc-android:1.1.1'
 }

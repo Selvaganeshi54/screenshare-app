@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinnerResolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/resolutions"
+        android:layout_marginBottom="32dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnStart"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@android:drawable/ic_media_play"
+            android:background="@android:color/transparent"
+            android:contentDescription="Start" />
+
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@android:drawable/ic_media_pause"
+            android:background="@android:color/transparent"
+            android:contentDescription="Stop"
+            android:layout_marginStart="32dp" />
+    </LinearLayout>
+</LinearLayout>

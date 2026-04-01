@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:background="@android:color/white"
-    tools:context=".MainActivity">
-
-    <Spinner
-        android:id="@+id/spinnerResolution"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:entries="@array/resolutions"
-        android:layout_marginBottom="32dp" />
+    android:padding="24dp">
 
     <LinearLayout
+        android:id="@+id/center_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
 
         <ImageButton
-            android:id="@+id/btnStart"
+            android:id="@+id/btn_start"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@android:drawable/ic_media_play"
-            android:background="@android:color/transparent"
+            android:src="@drawable/ic_start"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Start" />
 
         <ImageButton
-            android:id="@+id/btnStop"
+            android:id="@+id/btn_stop"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@android:drawable/ic_media_pause"
-            android:background="@android:color/transparent"
+            android:src="@drawable/ic_stop"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Stop"
-            android:layout_marginStart="32dp" />
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/res_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
     </LinearLayout>
-</LinearLayout>
+
+</RelativeLayout>
